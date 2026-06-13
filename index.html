@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OXY-HYDRO EXPLORER</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero-panel">
+      <div class="hero-copy">
+        <span class="eyebrow">OXY-HYDRO EXPLORER</span>
+        <h1>Sudan Oksijen Üreten Akıllı Yaşam Destek ve Keşif Gemisi</h1>
+        <div class="status-row">
+          <div class="status-badge" id="connectionStatus">Bağlantı: <span>...</span></div>
+          <div class="status-badge" id="freshnessStatus">Veri durumu: <span>...</span></div>
+        </div>
+        <div class="overview-card">
+          <div>
+            <p class="overview-label">Genel Sistem Durumu</p>
+            <h2 id="systemSummary">Veri bekleniyor...</h2>
+          </div>
+          <div class="overview-meta">
+            <p>Son güncelleme</p>
+            <p id="lastUpdate">--</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-accent"></div>
+    </section>
+
+    <section class="dashboard-grid" id="dashboardGrid">
+      <article class="dashboard-card">
+        <h3>Nem Oranı</h3>
+        <p id="humidity">-- %</p>
+      </article>
+      <article class="dashboard-card">
+        <h3>Sıcaklık</h3>
+        <p id="temperature">-- °C</p>
+      </article>
+      <article class="dashboard-card">
+        <h3>Işık Durumu</h3>
+        <p id="lightState">--</p>
+      </article>
+      <article class="dashboard-card">
+        <h3>Enerji Modu</h3>
+        <p id="energyMode">--</p>
+      </article>
+      <article class="dashboard-card">
+        <h3>Su Seviyesi</h3>
+        <p id="waterLevel">--</p>
+      </article>
+      <article class="dashboard-card">
+        <h3>Elektroliz Durumu</h3>
+        <p id="electrolysisState">--</p>
+      </article>
+      <article class="dashboard-card">
+        <h3>Hidrojen Güvenliği</h3>
+        <p id="hydrogenSafety">--</p>
+      </article>
+      <article class="dashboard-card">
+        <h3>Oksijen Üretim Durumu</h3>
+        <p id="oxygenStatus">--</p>
+      </article>
+      <article class="dashboard-card">
+        <h3>Motor Hızı</h3>
+        <p id="motorSpeed">-- RPM</p>
+      </article>
+      <article class="dashboard-card">
+        <h3>Dümen Açısı</h3>
+        <p id="servoAngle">--°</p>
+      </article>
+      <article class="dashboard-card">
+        <h3>Acil Durum</h3>
+        <p id="emergencyState">--</p>
+      </article>
+      <article class="dashboard-card">
+        <h3>Sistem Modu</h3>
+        <p id="systemMode">--</p>
+      </article>
+    </section>
+
+    <section class="story-panel">
+      <h2>Proje Senaryosu</h2>
+      <p>OXY-HYDRO EXPLORER, oksijen oranı düşük, nem miktarı az, verimli toprağı bulunmayan fakat su kaynaklarına sahip bir gezegende yaşam desteği sağlamak amacıyla tasarlanmış akıllı bir keşif ve yaşam destek aracıdır. Sistem, DENEYAP Kart tarafından kontrol edilmekte; suyu elektroliz yöntemiyle hidrojen ve oksijene ayırarak oksijen üretimini desteklemektedir. LDR ışık sensörüyle gündüz ve gece durumu algılanmakta, aydınlık ortamda güneş enerjisi modu, karanlık ortamda ise hidrojen enerji simülasyon modu seçilmektedir. Nem ve sıcaklık sensörleri gezegen atmosferini izlerken, joystick kontrollü DC motor ve mikroservo ile aracın hareket ve dümen kontrolü sağlanmaktadır.</p>
+      <p class="safety-note">Önemli güvenlik notu: Web sitesinde hidrojen yakımı gerçek sistem gibi gösterilmesin. Hidrojen enerji modu “simülasyon modu” olarak yazılsın. Hidrojen riski varsa elektroliz durumu otomatik olarak “Durduruldu” görünsün.</p>
+    </section>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-database-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
