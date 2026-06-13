@@ -1,13 +1,8 @@
-{
-  "name": "oxy-hydro-explorer",
+﻿{
+  "name": "feza-dashboard",
   "version": "1.0.0",
-  "description": "Modern statik Vercel dashboard for OXY-HYDRO EXPLORER using Firebase Realtime Database.",
   "private": true,
   "scripts": {
-    "start": "npx serve .",
-    "build": "echo 'Static site - no build step required'"
-  },
-  "dependencies": {
-    "serve": "latest"
+    "build": "echo Static site - no build step required"
   }
 }
